@@ -111,7 +111,7 @@ LeetCode
 Solved <span style={{color:"#ff7a18",fontWeight:"bold"}}>150+</span> Problems
 </p>
 
-<a href="https://leetcode.com/" target="_blank">
+<a href="https://leetcode.com/u/tanvi_shrma/" target="_blank">
 <button style={button}>
 View Profile
 </button>
@@ -155,7 +155,7 @@ HackerRank
 <FaStar style={starStyle}/>
 </p>
 
-<a href="https://www.hackerrank.com/" target="_blank">
+<a href="https://www.hackerrank.com/profile/tanvisharma2607" target="_blank">
 <button style={button}>
 View Profile
 </button>
