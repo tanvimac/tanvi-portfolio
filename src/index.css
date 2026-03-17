@@ -1,0 +1,153 @@
+:root{
+  --bg:#0b132b;
+  --accent:#ff7a18;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:var(--bg);
+  color:white;
+  font-family:system-ui,Segoe UI,Roboto,sans-serif;
+  overflow-x:hidden;
+}
+
+/* ROOT */
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* ANIMATED BACKGROUND */
+
+body::before,
+body::after{
+  content:"";
+  position:fixed;
+  width:600px;
+  height:600px;
+  border-radius:50%;
+  filter:blur(120px);
+  opacity:0.6;
+  z-index:-1;
+}
+
+body::before{
+  background:#ff7a18;
+  top:-200px;
+  left:-200px;
+  animation:moveGlow1 10s infinite alternate ease-in-out;
+}
+
+body::after{
+  background:#5b8cff;
+  bottom:-200px;
+  right:-200px;
+  animation:moveGlow2 12s infinite alternate ease-in-out;
+}
+
+@keyframes moveGlow1{
+  0%{
+    transform:translate(0,0);
+  }
+  100%{
+    transform:translate(200px,150px);
+  }
+}
+
+@keyframes moveGlow2{
+  0%{
+    transform:translate(0,0);
+  }
+  100%{
+    transform:translate(-200px,-150px);
+  }
+}
+
+/* HEADINGS */
+
+h1{
+  font-size:56px;
+}
+
+h2{
+  font-size:28px;
+}
+
+/* TEXT */
+
+p{
+  color:#aaa;
+}
+
+/* ============================= */
+/* PROJECT CARD STYLES */
+/* ============================= */
+
+.project-card{
+	background:#1c2541;
+	padding:25px;
+	border-radius:14px;
+	width:320px;
+	text-align:left;
+	box-shadow:0 8px 20px rgba(0,0,0,0.4);
+	transition:all 0.35s ease;
+	cursor:pointer;
+	border-top:5px solid transparent;
+	}
+
+/* hover animation */
+
+.project-card:hover{
+	transform:translateY(-12px);
+	box-shadow:0 20px 40px rgba(0,0,0,0.6);
+	}
+
+/* title color change */
+
+.project-card h3{
+	color:white;
+	transition:0.3s;
+	}
+
+.project-card:hover h3{
+	color:#ff7a18;
+	}
+
+/* tech stack tags */
+
+.tech-tag{
+	background:#2c344f;
+	padding:6px 12px;
+	border-radius:20px;
+	font-size:12px;
+	}
+
+/* colored borders */
+
+.border-orange{
+	border-top:5px solid #ff7a18;
+	}
+
+.border-blue{
+	border-top:5px solid #4da3ff;
+	}
+
+.border-purple{
+	border-top:5px solid #a855f7;
+	}
