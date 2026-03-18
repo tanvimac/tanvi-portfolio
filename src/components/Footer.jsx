@@ -46,7 +46,7 @@ gap:"18px"
 {/* ICON STYLE */}
 {[
 {icon:<FaGithub/>, link:"https://github.com/tanvimac"},
-{icon:<FaLinkedin/>, link:"https://linkedin.com/in/tanvi-sharma"},
+{icon:<FaLinkedin/>, link:"https://www.linkedin.com/in/tanvi-sharma-63301b297/"},
 {icon:<FaEnvelope/>, link:"mailto:tanvi.sharma@example.com"}
 ].map((item,index)=>(
 <a href={item.link} target="_blank" key={index}>
